@@ -27,13 +27,15 @@ This is a small addition to the changes that I made to check how git works
 # file = open("output.txt","w+")
 
 def to1000():
-    os.system("echo in to1000")
+    for x in range(100):
+        print("echo in to1000")
 
-def sayHi():
-    os.system("echo in sayHi")
+def sayHi(phrase):
+    for x in range(100):
+        print(f"echo in {phrase}")
 
 firstThread = t.Thread(target=to1000)
-secondThread = t.Thread(target=sayHi)
+secondThread = t.Thread(target=sayHi,args=["hi There"])
 
 firstThread.start()
 secondThread.start()
