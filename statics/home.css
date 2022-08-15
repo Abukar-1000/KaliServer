@@ -37,7 +37,7 @@ body {
     background-color: #d8d8d8;
     margin: 5% 10% 3%;
     width: 25%;
-    height: 80%;
+    height: 40%;
     border-radius: 10px;
     /* border-top-left-radius: 20px;
     border-top-right-radius: 20px; */
@@ -45,19 +45,22 @@ body {
     /* display: inline-block; */
 }
 .connectionOptions {
-    width: 20%;
+    width: 50%;
     margin: 0 auto;
     position: absolute;
-    left: 37%;
-    bottom: 60%;
+    left: 25%;
+    bottom: 68%;
 }
 /* buttons */
 .btn {
     margin-bottom: 3%;
-    width: 100%;
 }
 .addMac {
     margin-right: 1.5%;
+}
+
+.disconnectBtn, .reconnectBtn {
+    width: 25%;
 }
 /* form fields  */
 .inputField {
